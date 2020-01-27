@@ -6,11 +6,12 @@ var nbrMystere =Math.ceil(Math.random()*10);
 var nbrTentative = 5;
 
     button.onclick = function(){
-        nbrTentative--;
+        
         if(isNaN(input.value)){
             alert("Veuillez entrer un nombre valide");
             input.value="";
         }else{
+            nbrTentative--;
             if(input.value == nbrMystere){
                 var coup = 5 - nbrTentative;
                 alert("Bravo vous avez gagné en " + coup +" tentative(s)");
