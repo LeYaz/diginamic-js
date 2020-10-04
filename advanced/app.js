@@ -2,7 +2,7 @@ const http = require('http');
 const axios = require('axios');
 var Planet = require('./planet.js');
 
-let apiurl = "https://swapi.co/api/planets/";
+let apiurl = "https://swapi.dev/api/planets/";
 let data;
 let Planets=[];
 let stop = true;
